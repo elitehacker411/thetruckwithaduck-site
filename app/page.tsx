@@ -67,14 +67,18 @@ export default function Page() {
                   <CardTitle>Water Softeners</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <Image
-                    src="/images/water-softener.webp"
-                    alt="Outdoor water softener system with brine tank and resin tank"
-                    width={320}
-                    height={160}
-                    className="h-40 w-full rounded-md object-cover object-center"
-                    priority={false}
-                  />
+                  <div className="h-56 w-full rounded-md bg-slate-100 flex items-center justify-center overflow-hidden sm:h-64">
+                    <div className="relative h-full w-full">
+                      <Image
+                        src="/images/water-softener.webp"
+                        alt="Outdoor water softener system with brine tank and resin tank"
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-contain rotate-90 origin-center"
+                        priority={false}
+                      />
+                    </div>
+                  </div>
                   <p className="text-sm text-slate-600">
                     Stop hard water scale, protect fixtures and appliances, and enjoy softer skin and hair.
                   </p>
