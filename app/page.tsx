@@ -6,13 +6,8 @@ import Image from "next/image"
 import SiteHeader from "@/components/site-header"
 import SiteFooter from "@/components/site-footer"
 
-export const metadata = {
-  title: "Trucks with a duck — Water Treatment Systems",
-  description:
-    "Whole-home water filtration, softeners, reverse osmosis, and specialty treatment for better-tasting, safer water.",
-}
-
 export default function Page() {
+  // Server Component: no metadata
   return (
     <div className="flex min-h-dvh flex-col bg-white">
       <SiteHeader />

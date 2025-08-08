@@ -1,5 +1,3 @@
-"use client"
-
 import type { Metadata } from "next"
 import GetAQuoteClient from "./get-a-quote-client"
 import SiteHeader from "@/components/site-header"

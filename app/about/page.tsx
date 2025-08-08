@@ -2,12 +2,8 @@ import Image from "next/image"
 import SiteHeader from "@/components/site-header"
 import SiteFooter from "@/components/site-footer"
 
-export const metadata = {
-  title: "Why Trucks with a duck?",
-  description: "Certified water specialists, dependable products, and friendly service.",
-}
-
 export default function AboutPage() {
+  // Server Component: no metadata
   return (
     <div className="flex min-h-dvh flex-col bg-white">
       <SiteHeader />
