@@ -1,0 +1,153 @@
+// components/site-header.tsx
+import React from 'react';
+import Phone from './Phone'; // Assuming Phone is a component
+
+const SiteHeader = () => {
+  return (
+    <header>
+      {/* Top bar */}
+      <div className="top-bar">
+        <a
+          href="tel:3522380503"
+          className="inline-flex items-center gap-2 rounded-md bg-cyan-700 px-3 py-1 font-semibold hover:bg-cyan-800"
+        >
+          <Phone className="h-4 w-4" />
+          352-238-0503
+        </a>
+        {/* Other top bar content */}
+      </div>
+
+      {/* Desktop navigation */}
+      <nav className="desktop-nav">
+        <a
+          href="tel:3522380503"
+          className="inline-flex items-center gap-2 rounded-md bg-cyan-700 px-3 py-2 text-sm font-semibold text-white hover:bg-cyan-800"
+        >
+          <Phone className="h-4 w-4" />
+          Call
+        </a>
+        {/* Other desktop nav content */}
+      </nav>
+
+      {/* Mobile sheet */}
+      <div className="mobile-sheet">
+        <a
+          href="tel:3522380503"
+          className="inline-flex w-full items-center justify-center gap-2 rounded-md border px-3 py-2 text-sm font-medium hover:bg-slate-50"
+        >
+          <Phone className="h-4 w-4" />
+          352-238-0503
+        </a>
+        {/* Other mobile sheet content */}
+      </div>
+    </header>
+  );
+};
+
+export default SiteHeader;
+
+// app/page.tsx
+import React from 'react';
+import Phone from './Phone'; // Assuming Phone is a component
+
+const HomePage = () => {
+  return (
+    <div>
+      {/* CTA strip */}
+      <div className="cta-strip">
+        <a
+          href="tel:3522380503"
+          className="inline-flex items-center gap-2 rounded-md border border-white/30 px-4 py-2 text-sm font-medium hover:bg-white/10"
+        >
+          <Phone className="h-4 w-4" />
+          352-238-0503
+        </a>
+        {/* Other CTA strip content */}
+      </div>
+      {/* Other page content */}
+    </div>
+  );
+};
+
+export default HomePage;
+
+// app/contact/page.tsx
+import React from 'react';
+import Phone from './Phone'; // Assuming Phone is a component
+import Mail from './Mail'; // Assuming Mail is a component
+
+const ContactPage = () => {
+  return (
+    <div>
+      {/* Direct contact */}
+      <div className="direct-contact">
+        <a href="tel:3522380503" className="flex items-center gap-2 hover:underline">
+          <Phone className="h-4 w-4 text-cyan-700" />
+          352-238-0503
+        </a>
+        <a href="mailto:Brianraysplumbing@gmail.com" className="flex items-center gap-2 hover:underline">
+          <Mail className="h-4 w-4 text-cyan-700" />
+          Brianraysplumbing@gmail.com
+        </a>
+        {/* Other direct contact content */}
+      </div>
+      {/* Other contact page content */}
+    </div>
+  );
+};
+
+export default ContactPage;
+
+// app/get-a-quote/page.tsx
+import React from 'react';
+
+const GetAQuotePage = () => {
+  return (
+    <div>
+      {/* Prefer to talk? */}
+      <div className="prefer-to-talk">
+        <a
+          href="tel:3522380503"
+          className="mt-2 inline-flex items-center rounded-md border px-3 py-2 text-sm font-medium hover:bg-slate-50"
+        >
+          352-238-0503
+        </a>
+        {/* Other prefer to talk content */}
+      </div>
+      {/* Other get a quote page content */}
+    </div>
+  );
+};
+
+export default GetAQuotePage;
+
+// app/contact-us/page.tsx
+import React from 'react';
+
+const ContactUsPage = () => {
+  return (
+    <div>
+      {/* Other ways to reach us */}
+      <div className="other-ways-to-reach-us">
+        <ul className="mt-3 space-y-2 text-slate-700">
+          <li>
+            Email:{" "}
+            <a href="mailto:Brianraysplumbing@gmail.com" className="underline">
+              Brianraysplumbing@gmail.com
+            </a>
+          </li>
+          <li>
+            Phone:{" "}
+            <a href="tel:3522380503" className="underline">
+              352-238-0503
+            </a>
+          </li>
+          <li>Hours: Mon–Fri 8am–6pm, Sat 9am–1pm</li>
+        </ul>
+        {/* Other contact us page content */}
+      </div>
+    </div>
+  );
+};
+
+export default ContactUsPage;
