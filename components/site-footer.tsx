@@ -14,6 +14,9 @@ export default function SiteFooter() {
           <Link href="#" className="text-xs text-slate-600 hover:underline">
             Privacy
           </Link>
+          <Link href="/qr" className="text-xs text-slate-600 hover:underline">
+            QR Code
+          </Link>
           <Link href="/contact" className="text-xs text-slate-600 hover:underline">
             Contact
           </Link>

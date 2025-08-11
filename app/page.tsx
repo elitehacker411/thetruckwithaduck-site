@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Droplets, Filter, FlaskConical, ShieldCheck, Phone } from 'lucide-react'
+import { Droplets, Filter, FlaskConical, ShieldCheck, Phone } from "lucide-react"
 import Image from "next/image"
 import SiteHeader from "@/components/site-header"
 import SiteFooter from "@/components/site-footer"
@@ -25,9 +25,7 @@ export default function Page() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/20" />
           <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
             <div className="max-w-3xl space-y-4">
-              <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-5xl">
-                Why Trucks with a duck?
-              </h1>
+              <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-5xl">Why Trucks with a duck?</h1>
               <p className="mx-auto max-w-2xl text-white/90 sm:text-lg">
                 Certified water specialists. Proven systems. Friendly local service. Get softer, cleaner, better-tasting
                 water for your home or business.
@@ -82,9 +80,14 @@ export default function Page() {
                   <p className="text-sm text-slate-600">
                     Stop hard water scale, protect fixtures and appliances, and enjoy softer skin and hair.
                   </p>
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href="/get-a-quote?service=Water%20Softeners">Get Quote</Link>
-                  </Button>
+                  <div className="flex flex-col gap-2">
+                    <Button asChild variant="outline" className="w-full bg-transparent">
+                      <Link href="/services/water-softeners">Get more Details</Link>
+                    </Button>
+                    <Button asChild variant="outline" className="w-full bg-transparent">
+                      <Link href="/get-a-quote?service=Water%20Softeners">Get Quote</Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -104,9 +107,14 @@ export default function Page() {
                   <p className="text-sm text-slate-600">
                     Reduce chlorine, sediment, and unwanted tastes and odors throughout your entire home.
                   </p>
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href="/get-a-quote?service=Whole-House%20Filtration">Get Quote</Link>
-                  </Button>
+                  <div className="flex flex-col gap-2">
+                    <Button asChild variant="outline" className="w-full bg-transparent">
+                      <Link href="/services/whole-house-filtration">Get more Details</Link>
+                    </Button>
+                    <Button asChild variant="outline" className="w-full bg-transparent">
+                      <Link href="/get-a-quote?service=Whole-House%20Filtration">Get Quote</Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -126,9 +134,14 @@ export default function Page() {
                   <p className="text-sm text-slate-600">
                     Bottle-quality drinking water right at your sink. Great taste, fewer impurities.
                   </p>
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href="/get-a-quote?service=Reverse%20Osmosis">Get Quote</Link>
-                  </Button>
+                  <div className="flex flex-col gap-2">
+                    <Button asChild variant="outline" className="w-full bg-transparent">
+                      <Link href="/services/reverse-osmosis">Get more Details</Link>
+                    </Button>
+                    <Button asChild variant="outline" className="w-full bg-transparent">
+                      <Link href="/get-a-quote?service=Reverse%20Osmosis">Get Quote</Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -148,9 +161,14 @@ export default function Page() {
                   <p className="text-sm text-slate-600">
                     Eliminate staining and rotten-egg odor caused by iron, manganese, and hydrogen sulfide.
                   </p>
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href="/get-a-quote?service=Iron%20%26%20Sulfur%20Removal">Get Quote</Link>
-                  </Button>
+                  <div className="flex flex-col gap-2">
+                    <Button asChild variant="outline" className="w-full bg-transparent">
+                      <Link href="/services/iron-sulfur-removal">Get more Details</Link>
+                    </Button>
+                    <Button asChild variant="outline" className="w-full bg-transparent">
+                      <Link href="/get-a-quote?service=Iron%20%26%20Sulfur%20Removal">Get Quote</Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </div>

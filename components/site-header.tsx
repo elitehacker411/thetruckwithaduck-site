@@ -17,6 +17,7 @@ export default function SiteHeader() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/contact-us", label: "Contact" },
+    { href: "/qr", label: "QR Code" } // add this
   ]
 
   const solutions = ["Residential", "Office", "Commercial", "Industrial"]
@@ -116,6 +117,9 @@ export default function SiteHeader() {
                   </Link>
                   <Link href="/contact-us" className="block text-base font-semibold">
                     Contact
+                  </Link>
+                  <Link href="/qr" className="block text-base font-semibold">
+                    QR Code
                   </Link>
                   <div className="space-y-2">
                     <label className="text-xs uppercase text-slate-500">Solutions</label>
